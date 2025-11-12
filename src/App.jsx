@@ -11,7 +11,6 @@ import Contato from "./pages/Contato.jsx";
 export default function App() {
     return (
         <Layout>
-            {/* 🔹 Componente que força scroll para o topo sempre que muda de página */}
             <ScrollToTop />
 
             <Routes>
@@ -20,7 +19,6 @@ export default function App() {
                 <Route path="/NosAjude" element={<NosAjude />} />
                 <Route path="/FinaisFelizes" element={<FinaisFelizes />} />
                 <Route path="/Contato" element={<Contato />} />
-                {/* 404 simples */}
                 <Route path="*" element={<Navigate to="/Inicio" replace />} />
             </Routes>
         </Layout>

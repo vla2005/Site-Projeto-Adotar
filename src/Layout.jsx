@@ -22,26 +22,21 @@ export default function Layout({ children }) {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            {/* Header */}
             <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
                 <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         {/* Logo */}
                         <Link to={createPageUrl("/")} className="flex items-center gap-3 group">
-                            {/*<div className="w-12 h-12 bg-gradient-to-br from-[#692B76] to-[#8B3A8F] rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-transform duration-300">*/}
-                            {/*    <Heart className="w-6 h-6 text-white fill-white" />*/}
-                            {/*</div>*/}
                             <img
                                 src={logo}
                                 alt="Logo"
                                 className="w-auto h-20 object-cover rounded-3xl"
                             />
                             <span className="text-2xl font-bold bg-gradient-to-r from-[#692B76] to-[#8B3A8F] bg-clip-text text-transparent">
-                Projeto Adotar
-              </span>
+                                Projeto Adotar
+                            </span>
                         </Link>
 
-                        {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center gap-1">
                             {navItems.map((item) => (
                                 <Link
@@ -58,7 +53,6 @@ export default function Layout({ children }) {
                             ))}
                         </div>
 
-                        {/* Mobile Menu Button */}
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="md:hidden p-2 rounded-lg hover:bg-purple-50 transition-colors"
@@ -71,7 +65,6 @@ export default function Layout({ children }) {
                         </button>
                     </div>
 
-                    {/* Mobile Navigation */}
                     {mobileMenuOpen && (
                         <div className="md:hidden py-4 border-t border-gray-100">
                             {navItems.map((item) => (
@@ -93,14 +86,11 @@ export default function Layout({ children }) {
                 </nav>
             </header>
 
-            {/* Main Content */}
             <main className="flex-1">{children}</main>
 
-            {/* Footer */}
             <footer className="bg-gradient-to-br from-[#692B76] to-[#8B3A8F] text-white mt-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                        {/* About */}
                         <div>
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
@@ -114,7 +104,6 @@ export default function Layout({ children }) {
                             </p>
                         </div>
 
-                        {/* Quick Links */}
                         <div>
                             <h3 className="text-lg font-bold mb-4">Links Rápidos</h3>
                             <div className="space-y-2">
@@ -130,7 +119,6 @@ export default function Layout({ children }) {
                             </div>
                         </div>
 
-                        {/* Contact */}
                         <div>
                             <h3 className="text-lg font-bold mb-4">Fale Conosco</h3>
                             <div className="space-y-3">
@@ -162,7 +150,7 @@ export default function Layout({ children }) {
 
                     <div className="border-t border-white/20 pt-8 text-center">
                         <p className="text-white/60 text-sm">
-                            © 2024 Projeto Adotar. Todos os direitos reservados. Feito com 💜 para os animais.
+                            © 2025 Projeto Adotar. Todos os direitos reservados. Feito com 💜 para os animais.
                         </p>
                     </div>
                 </div>

@@ -116,7 +116,6 @@ export default function Inicio() {
 
     return (
         <div className="bg-white">
-            {/* Hero Section */}
             <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-50 via-pink-50 to-white">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1600')] bg-cover bg-center opacity-10"></div>
                 <motion.div
@@ -131,9 +130,9 @@ export default function Inicio() {
                         </div>
                     </motion.div>
                     <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-[#692B76] to-[#8B3A8F] bg-clip-text text-transparent">
-              Cada vida que salvamos
-            </span>
+                     <span className="bg-gradient-to-r from-[#692B76] to-[#8B3A8F] bg-clip-text text-transparent">
+                        Cada vida que salvamos
+                     </span>
                         <br />
                         <span className="text-gray-800">nos devolve uma parte</span>
                         <br />
@@ -162,7 +161,6 @@ export default function Inicio() {
                 </motion.div>
             </section>
 
-            {/* About Section */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -247,7 +245,6 @@ export default function Inicio() {
                         >
                             <div className="relative overflow-hidden rounded-3xl shadow-2xl
                                     h-[420px] sm:h-[520px] md:h-[600px] lg:h-[700px]">
-                                {/* imagem preenche tudo */}
                                 <img
                                     src={team}
                                     alt="Nosso time"
@@ -256,7 +253,6 @@ export default function Inicio() {
                                     decoding="async"
                                 />
 
-                                {/* overlay de gradiente acima da imagem */}
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#692B76]/20 to-transparent" />
                             </div>
                         </motion.div>
@@ -264,7 +260,6 @@ export default function Inicio() {
                 </div>
             </section>
 
-            {/* What We Do Section */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -325,7 +320,6 @@ export default function Inicio() {
                 </div>
             </motion.section>
 
-            {/* FAQ Section */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -351,9 +345,9 @@ export default function Inicio() {
                                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                                     className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-purple-50 transition-colors duration-300"
                                 >
-                  <span className="font-semibold text-gray-900 pr-4">
-                    {faq.question}
-                  </span>
+                                    <span className="font-semibold text-gray-900 pr-4">
+                                        {faq.question}
+                                    </span>
                                     <ChevronDown
                                         className={`w-5 h-5 text-[#692B76] flex-shrink-0 transition-transform duration-300 ${
                                             openFaq === index ? "rotate-180" : ""
@@ -377,7 +371,6 @@ export default function Inicio() {
                 </div>
             </motion.section>
 
-            {/* CTA Section */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"

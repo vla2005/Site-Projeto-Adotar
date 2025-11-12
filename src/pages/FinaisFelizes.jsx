@@ -4,7 +4,6 @@ import { createPageUrl } from "../utils/index.js";
 import { Heart, ChevronLeft, ChevronRight, CheckCircle, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
-// ---- importação das imagens ----
 import tapetinho1 from "../assets/images/tapetinho/tapetinho1.png";
 import tapetinho2 from "../assets/images/tapetinho/tapetinho2.jpeg";
 import tapetinho3 from "../assets/images/tapetinho/tapetinho3.jpeg";
@@ -27,14 +26,12 @@ import sol1 from "../assets/images/sol/sol1.jpeg";
 import sol2 from "../assets/images/sol/sol2.jpg";
 import sol3 from "../assets/images/sol/sol3.jpeg";
 
-/** Carrossel no estilo do seu Vue (sem transição) */
 function ImageCarousel({ images, currentIndex, setIndex }) {
     const prev = () => setIndex((currentIndex - 1 + images.length) % images.length);
     const next = () => setIndex((currentIndex + 1) % images.length);
 
     return (
         <div className="relative w-full overflow-hidden rounded-3xl shadow-lg">
-            {/* mesma estilização do Vue: alturas fixas + object-cover */}
             <img
                 src={images[currentIndex]}
                 alt={`Foto ${currentIndex + 1}`}
@@ -42,7 +39,6 @@ function ImageCarousel({ images, currentIndex, setIndex }) {
                 className="block w-full h-[380px] md:h-[500px] lg:h-[560px] object-cover object-center rounded-3xl"
             />
 
-            {/* Botões */}
             <button
                 onClick={prev}
                 className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-10 h-10 flex items-center justify-center shadow-md"
@@ -58,7 +54,6 @@ function ImageCarousel({ images, currentIndex, setIndex }) {
                 <ChevronRight className="w-6 h-6" />
             </button>
 
-            {/* Indicadores */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
                 {images.map((_, i) => (
                     <button
@@ -114,7 +109,6 @@ export default function FinaisFelizes() {
 
     return (
         <div className="bg-white">
-            {/* Hero Section */}
             <section className="relative py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-white overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1600')] bg-cover bg-center opacity-5"></div>
                 <motion.div
@@ -164,7 +158,6 @@ export default function FinaisFelizes() {
                 </motion.div>
             </section>
 
-            {/* Stories Section Title */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -181,7 +174,6 @@ export default function FinaisFelizes() {
                 </div>
             </motion.section>
 
-            {/* Tapetinho */}
             <section className="py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -229,7 +221,6 @@ export default function FinaisFelizes() {
                 </div>
             </section>
 
-            {/* Mel */}
             <section className="py-16 bg-gradient-to-b from-white to-purple-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -281,7 +272,6 @@ export default function FinaisFelizes() {
                 </div>
             </section>
 
-            {/* Patacone */}
             <section className="py-16 bg-purple-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -330,7 +320,6 @@ export default function FinaisFelizes() {
                 </div>
             </section>
 
-            {/* Título seção "ainda esperando" */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -352,7 +341,6 @@ export default function FinaisFelizes() {
                 </div>
             </motion.section>
 
-            {/* Merida */}
             <section className="py-16 bg-gradient-to-b from-white to-purple-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -404,7 +392,6 @@ export default function FinaisFelizes() {
                 </div>
             </section>
 
-            {/* Raya */}
             <section className="py-16 bg-purple-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -459,7 +446,6 @@ export default function FinaisFelizes() {
                 </div>
             </section>
 
-            {/* Leona */}
             <section className="py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -514,7 +500,6 @@ export default function FinaisFelizes() {
                 </div>
             </section>
 
-            {/* Sol */}
             <section className="py-16 bg-gradient-to-b from-white to-purple-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -568,7 +553,6 @@ export default function FinaisFelizes() {
                 </div>
             </section>
 
-            {/* Final CTA */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"

@@ -78,9 +78,7 @@ export default function NosAjude() {
                 </motion.div>
             </section>
 
-            {/* Help Options */}
             <motion.section
-                // Em vez de whileInView, animamos on mount:
                 initial="hidden"
                 animate="visible"
                 variants={staggerContainer}
@@ -91,7 +89,6 @@ export default function NosAjude() {
                         {helpItems.map((item, index) => (
                             <motion.div
                                 key={index}
-                                // Pode reduzir o stagger pra ficar mais rápido
                                 variants={fadeInUp}
                                 transition={{ duration: 0.35 }}
                                 className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-purple-200 transform hover:-translate-y-1"
@@ -118,7 +115,6 @@ export default function NosAjude() {
                 </div>
             </motion.section>
 
-            {/* PIX Section */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -194,7 +190,6 @@ export default function NosAjude() {
                 </div>
             </motion.section>
 
-            {/* Where Donations Go */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -230,7 +225,6 @@ export default function NosAjude() {
                 </div>
             </motion.section>
 
-            {/* Contact CTA */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -262,7 +256,6 @@ export default function NosAjude() {
                 </div>
             </motion.section>
 
-            {/* Final CTA */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"

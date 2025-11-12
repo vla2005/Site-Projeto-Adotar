@@ -20,7 +20,6 @@ export default function Contato() {
 
     return (
         <div className="bg-white">
-            {/* Hero Section */}
             <section className="relative py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-white overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1600')] bg-cover bg-center opacity-5"></div>
                 <motion.div
@@ -46,7 +45,6 @@ export default function Contato() {
                 </motion.div>
             </section>
 
-            {/* Contact Cards */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -56,7 +54,6 @@ export default function Contato() {
             >
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-8">
-                        {/* WhatsApp Card */}
                         <motion.div
                             variants={fadeInUp}
                             className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 sm:p-12 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
@@ -79,7 +76,6 @@ export default function Contato() {
                             </a>
                         </motion.div>
 
-                        {/* Instagram Card */}
                         <motion.div
                             variants={fadeInUp}
                             className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-3xl p-8 sm:p-12 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
@@ -105,7 +101,6 @@ export default function Contato() {
                 </div>
             </motion.section>
 
-            {/* Info Section */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -150,7 +145,6 @@ export default function Contato() {
                 </div>
             </motion.section>
 
-            {/* Final CTA */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"

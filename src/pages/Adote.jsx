@@ -20,7 +20,6 @@ export default function Adote() {
 
     return (
         <div className="bg-white">
-            {/* Hero Section */}
             <section className="relative py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-white overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1600')] bg-cover bg-center opacity-5"></div>
                 <motion.div
@@ -45,10 +44,8 @@ export default function Adote() {
                 </motion.div>
             </section>
 
-            {/* Process Section */}
             <section className="py-20 bg-white">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Introduction */}
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -71,7 +68,6 @@ export default function Adote() {
                         </p>
                     </motion.div>
 
-                    {/* Steps */}
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -95,7 +91,6 @@ export default function Adote() {
                         ))}
                     </motion.div>
 
-                    {/* CTA Button */}
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -117,7 +112,6 @@ export default function Adote() {
                 </div>
             </section>
 
-            {/* Benefits Section */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
@@ -154,7 +148,6 @@ export default function Adote() {
                 </div>
             </motion.section>
 
-            {/* Final CTA */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
